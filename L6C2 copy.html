@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <style>
+            h1 {
+                font-size: 40px; 
+                background: linear-gradient(to right, #ff00ff, #00ffff); 
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
+        </head>
+</head>
+<body>
+    <center>
+        <h1>Enjoy the Sunset</h1><br>
+        <video src="sea.MP4" id="Video1" width="1200"></video>
+        
+        <script>
+        function MyVideo() {
+            document. getElementById("Video1").play();
+        } 
+        function MyVideoP() {
+            document. getElementById("Video1").pause();
+        }
+        function MyVideoST() {
+            document. getElementById("Video1").pause();
+            document. getElementById("Video1").currentTime=0;
+        }
+        </script>
+        <br><br>
+        <button onClick="MyVideo()">PLAY IT</button>
+        <button onClick="MyVideoP()">PAUSE</button>
+        <button onClick="MyVideoST()" >RESTART</button>
+        
+        </script>
+        <br><br>
+       
+    </center>
+</body>
+</html>
+
